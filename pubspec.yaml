@@ -1,0 +1,66 @@
+name: outpost_cadet
+description: Junior astronaut Moon/Mars outpost trainer — NASA Space Apps
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  flutter_riverpod: ^2.6.1
+  go_router: ^15.1.2
+  shared_preferences: ^2.5.3
+  audioplayers: ^6.8.1
+  flame: ^1.38.2
+  flame_forge2d: ^0.19.3+7
+  http: ^1.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/data/
+    - assets/images/
+    - assets/brand/
+    - assets/icons/modules/
+    - assets/icons/resources/
+    - assets/icons/ui/
+    - assets/icons/missions/
+    - assets/icons/nav/
+    - assets/icons/status/
+    - assets/icons/brief/
+    - assets/icons/build/
+    - assets/icons/palette/
+    - assets/icons/tiles/
+    - assets/icons/facilities/
+    - assets/icons/run/
+    - assets/icons/debrief/
+    - assets/audio/
+    - assets/world_2d/cadet/
+    - assets/world_2d/tiles/
+    - assets/world_2d/buildings/
+    - assets/world_2d/props/
+    - assets/world_2d/mountains/
+  fonts:
+    - family: BebasNeue
+      fonts:
+        - asset: assets/fonts/BebasNeue-Regular.ttf
+    - family: Barlow
+      fonts:
+        - asset: assets/fonts/Barlow-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Barlow-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Barlow-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Barlow-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Barlow-ExtraBold.ttf
+          weight: 800

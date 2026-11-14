@@ -1,0 +1,141 @@
+[
+  {
+    "id": "habitat",
+    "name": "Crew Habitat",
+    "icon": "home",
+    "description": "Living space that slows life-support drain.",
+    "mass": 6,
+    "powerDraw": 2,
+    "effects": {
+      "lifeSupportPerSol": 1.5,
+      "foodPerSol": 0,
+      "powerPerSol": 0,
+      "radiationPerSol": 0,
+      "radiationCapBonus": 0
+    },
+    "required": true,
+    "maxCount": 1
+  },
+  {
+    "id": "solar",
+    "name": "Solar Array",
+    "icon": "wb_sunny",
+    "description": "Makes power each sol — weak in dust storms.",
+    "mass": 4,
+    "powerDraw": 0,
+    "effects": {
+      "lifeSupportPerSol": 0,
+      "foodPerSol": 0,
+      "powerPerSol": 4,
+      "radiationPerSol": 0,
+      "radiationCapBonus": 0
+    },
+    "required": false,
+    "maxCount": 4
+  },
+  {
+    "id": "battery",
+    "name": "Battery Bank",
+    "icon": "battery_charging_full",
+    "description": "Stores extra power so meters recover overnight.",
+    "mass": 3,
+    "powerDraw": 0,
+    "effects": {
+      "lifeSupportPerSol": 0,
+      "foodPerSol": 0,
+      "powerPerSol": 0,
+      "radiationPerSol": 0,
+      "radiationCapBonus": 0,
+      "powerCapBonus": 15
+    },
+    "required": false,
+    "maxCount": 2
+  },
+  {
+    "id": "recycler",
+    "name": "Water Recycler",
+    "icon": "water_drop",
+    "description": "Recovers water and air — core life support.",
+    "mass": 5,
+    "powerDraw": 3,
+    "effects": {
+      "lifeSupportPerSol": 3,
+      "foodPerSol": 0,
+      "powerPerSol": 0,
+      "radiationPerSol": 0,
+      "radiationCapBonus": 0
+    },
+    "required": false,
+    "maxCount": 2
+  },
+  {
+    "id": "greenhouse",
+    "name": "Greenhouse",
+    "icon": "yard",
+    "description": "Grows food but needs power and mass.",
+    "mass": 5,
+    "powerDraw": 3,
+    "effects": {
+      "lifeSupportPerSol": 0.5,
+      "foodPerSol": 3,
+      "powerPerSol": 0,
+      "radiationPerSol": 0,
+      "radiationCapBonus": 0
+    },
+    "required": false,
+    "maxCount": 3
+  },
+  {
+    "id": "shield",
+    "name": "Regolith Shield",
+    "icon": "shield",
+    "description": "Blocks radiation using Mars soil cover.",
+    "mass": 6,
+    "powerDraw": 0,
+    "effects": {
+      "lifeSupportPerSol": 0,
+      "foodPerSol": 0,
+      "powerPerSol": 0,
+      "radiationPerSol": -2.5,
+      "radiationCapBonus": 10
+    },
+    "required": false,
+    "maxCount": 3
+  },
+  {
+    "id": "lab",
+    "name": "Science Lab",
+    "icon": "science",
+    "description": "Bonus stars on win; uses power and mass.",
+    "mass": 4,
+    "powerDraw": 2,
+    "effects": {
+      "lifeSupportPerSol": 0,
+      "foodPerSol": 0,
+      "powerPerSol": 0,
+      "radiationPerSol": 0,
+      "radiationCapBonus": 0,
+      "bonusStars": 1
+    },
+    "required": false,
+    "maxCount": 1
+  },
+  {
+    "id": "spares",
+    "name": "Spare Parts",
+    "icon": "build",
+    "description": "Softens equipment glitches during events.",
+    "mass": 2,
+    "powerDraw": 0,
+    "effects": {
+      "lifeSupportPerSol": 0,
+      "foodPerSol": 0,
+      "powerPerSol": 0,
+      "radiationPerSol": 0,
+      "radiationCapBonus": 0,
+      "glitchResist": true
+    },
+    "required": false,
+    "maxCount": 2
+  }
+]

@@ -1,0 +1,138 @@
+[
+  {
+    "id": "fact_eclss",
+    "title": "Life Support (ECLSS)",
+    "body": "NASA's ECLSS recycles air and water so crews can live far from Earth without endless resupply. Every liter counts.",
+    "sourceTitle": "NASA ECLSS",
+    "sourceUrl": "https://www.nasa.gov/humans-in-space/eclss/",
+    "system": "lifeSupport"
+  },
+  {
+    "id": "fact_rad",
+    "title": "Mars Radiation",
+    "body": "Curiosity's RAD instrument measured radiation on the way to Mars and on the surface — shielding is a real design choice.",
+    "sourceTitle": "MSL RAD",
+    "sourceUrl": "https://mars.nasa.gov/msl/spacecraft/instruments/rad/",
+    "system": "radiation"
+  },
+  {
+    "id": "fact_flare",
+    "title": "Solar Flares (DONKI)",
+    "body": "NASA's DONKI database tracks real solar flares and space weather. Flight teams use this kind of data when deciding if crews need extra shielding.",
+    "sourceTitle": "CCMC DONKI",
+    "sourceUrl": "https://ccmc.gsfc.nasa.gov/tools/DONKI/",
+    "system": "radiation"
+  },
+  {
+    "id": "fact_dust",
+    "title": "Dust vs Solar Power",
+    "body": "Mars dust storms can dim sunlight for weeks. Solar-powered missions must plan for cloudy sols — just like your outpost.",
+    "sourceTitle": "NASA Mars",
+    "sourceUrl": "https://mars.nasa.gov/",
+    "system": "power"
+  },
+  {
+    "id": "fact_lunar_dust",
+    "title": "Lunar Dust",
+    "body": "Moon dust is sharp and clingy. It can cover solar panels and spacesuits. Artemis planners treat dust as a real engineering problem.",
+    "sourceTitle": "NASA Artemis",
+    "sourceUrl": "https://www.nasa.gov/artemis/",
+    "system": "power"
+  },
+  {
+    "id": "fact_solar",
+    "title": "Power Off Earth",
+    "body": "Many surface missions use solar arrays. Clear skies mean more watts for life support, science, and charging batteries for the night.",
+    "sourceTitle": "NASA Mars",
+    "sourceUrl": "https://mars.nasa.gov/",
+    "system": "power"
+  },
+  {
+    "id": "fact_food",
+    "title": "Growing Food in Space",
+    "body": "NASA and partners study plant growth in space so crews might grow food farther from Earth. On Earth, the same ideas help remote communities.",
+    "sourceTitle": "CSA Food Production Toolkit",
+    "sourceUrl": "https://www.asc-csa.gc.ca/eng/youth-educators/toolkits/food-production/",
+    "system": "food"
+  },
+  {
+    "id": "fact_habitat",
+    "title": "Why Habitats Matter",
+    "body": "A habitat is more than a room — it protects crew, stores supplies, and anchors life-support hardware.",
+    "sourceTitle": "NASA Humans in Space",
+    "sourceUrl": "https://www.nasa.gov/humans-in-space/",
+    "system": "lifeSupport"
+  },
+  {
+    "id": "fact_shield",
+    "title": "Regolith Shielding",
+    "body": "Covering habitats with local soil (regolith) is a studied way to add radiation protection without shipping heavy walls from Earth.",
+    "sourceTitle": "NASA Mars Exploration",
+    "sourceUrl": "https://mars.nasa.gov/",
+    "system": "radiation"
+  },
+  {
+    "id": "fact_water",
+    "title": "Recycling Water",
+    "body": "On the ISS, water recyclers reclaim moisture from air and other sources so every drop matters.",
+    "sourceTitle": "NASA ECLSS",
+    "sourceUrl": "https://www.nasa.gov/humans-in-space/eclss/",
+    "system": "lifeSupport"
+  },
+  {
+    "id": "fact_comms",
+    "title": "Communication Delay",
+    "body": "Radio to the Moon is about a second. To Mars it can be around 4 to 24 minutes one way. Crews must decide before Earth finishes talking.",
+    "sourceTitle": "NASA Humans in Space",
+    "sourceUrl": "https://www.nasa.gov/humans-in-space/",
+    "system": "general"
+  },
+  {
+    "id": "fact_radlab",
+    "title": "Real Dose Rates (RadLab)",
+    "body": "RadLab shares real radiation dose measurements from instruments in space. Your SHIELD meter is a kid-friendly stand-in for that kind of risk.",
+    "sourceTitle": "OSDR RadLab",
+    "sourceUrl": "https://visualization.osdr.nasa.gov/radlab/gui/data-api/",
+    "system": "radiation"
+  },
+  {
+    "id": "fact_osdr",
+    "title": "Space Biology (OSDR)",
+    "body": "NASA's Open Science Data Repository holds research on how spaceflight affects living things — bones, sleep, plants, and more.",
+    "sourceTitle": "NASA OSDR",
+    "sourceUrl": "https://osdr.nasa.gov/bio/repo/",
+    "system": "general"
+  },
+  {
+    "id": "fact_trek",
+    "title": "Real Mars Sites",
+    "body": "Mars Trek lets you explore real elevation and imagery from NASA Mars missions — the same kind of place names used in your mission briefs.",
+    "sourceTitle": "NASA Mars Trek",
+    "sourceUrl": "https://trek.nasa.gov/mars/",
+    "system": "general"
+  },
+  {
+    "id": "fact_tradeoff",
+    "title": "Engineering Trade-offs",
+    "body": "Every kilogram sent off Earth costs time and fuel. More greenhouse mass may mean less mass for shielding — choices matter.",
+    "sourceTitle": "NASA Space Apps Challenge",
+    "sourceUrl": "https://www.spaceappschallenge.org/",
+    "system": "general"
+  },
+  {
+    "id": "fact_battery",
+    "title": "Storing Energy",
+    "body": "Batteries store daytime solar energy so systems keep running through the night — on the Moon or on Mars.",
+    "sourceTitle": "NASA Mars",
+    "sourceUrl": "https://mars.nasa.gov/",
+    "system": "power"
+  },
+  {
+    "id": "fact_mission",
+    "title": "Junior Mission Control",
+    "body": "Real missions balance life support, power, food, radiation, and delayed communications every day. You just practiced being a junior mission controller.",
+    "sourceTitle": "NASA Humans in Space",
+    "sourceUrl": "https://www.nasa.gov/humans-in-space/",
+    "system": "general"
+  }
+]

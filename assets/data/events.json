@@ -1,0 +1,338 @@
+[
+  {
+    "id": "dust_storm",
+    "name": "Dust Storm",
+    "description": "Red dust blocks the sun. Solar power drops hard. How do you respond?",
+    "durationSols": 3,
+    "multipliers": {
+      "powerFromSolar": 0.3,
+      "food": 1.0,
+      "lifeSupport": 1.0,
+      "radiation": 1.0
+    },
+    "tone": "danger",
+    "factId": "fact_dust",
+    "choices": [
+      {
+        "id": "batteries",
+        "label": "Run on batteries",
+        "blurb": "Keep life support on. Drain stored power.",
+        "recommended": true,
+        "multipliers": {
+          "powerFromSolar": 0.35,
+          "food": 1.0,
+          "lifeSupport": 1.0,
+          "radiation": 1.0
+        },
+        "instant": { "power": -12 }
+      },
+      {
+        "id": "throttle_food",
+        "label": "Throttle greenhouses",
+        "blurb": "Save power by cutting food growth.",
+        "recommended": false,
+        "multipliers": {
+          "powerFromSolar": 0.45,
+          "food": 0.55,
+          "lifeSupport": 1.0,
+          "radiation": 1.0
+        },
+        "instant": { "power": -4, "food": -6 }
+      }
+    ]
+  },
+  {
+    "id": "lunar_dust",
+    "name": "Lunar Dust",
+    "description": "Fine Moon dust is burying your solar panels. Retract them and lose power tonight — or leave them out and risk worse damage?",
+    "durationSols": 2,
+    "multipliers": {
+      "powerFromSolar": 0.45,
+      "food": 1.0,
+      "lifeSupport": 1.0,
+      "radiation": 1.0
+    },
+    "tone": "danger",
+    "factId": "fact_lunar_dust",
+    "choices": [
+      {
+        "id": "retract",
+        "label": "Retract the panels",
+        "blurb": "Safer hardware. You lose charging tonight.",
+        "recommended": true,
+        "multipliers": {
+          "powerFromSolar": 0.15,
+          "food": 1.0,
+          "lifeSupport": 1.0,
+          "radiation": 1.0
+        },
+        "instant": { "power": -14 }
+      },
+      {
+        "id": "leave_exposed",
+        "label": "Leave panels exposed",
+        "blurb": "Keep some charge — dust may scrape and clog arrays.",
+        "recommended": false,
+        "multipliers": {
+          "powerFromSolar": 0.55,
+          "food": 1.0,
+          "lifeSupport": 0.95,
+          "radiation": 1.0
+        },
+        "instant": { "power": -6, "lifeSupport": -8 }
+      }
+    ]
+  },
+  {
+    "id": "solar_flare",
+    "name": "Solar Flare",
+    "description": "A solar flare shows up in NASA space-weather data. Radiation outside jumps. What does the crew do?",
+    "durationSols": 2,
+    "multipliers": {
+      "powerFromSolar": 1.0,
+      "food": 1.0,
+      "lifeSupport": 1.0,
+      "radiation": 2.2
+    },
+    "tone": "danger",
+    "factId": "fact_flare",
+    "choices": [
+      {
+        "id": "shelter",
+        "label": "Crew to shielded habitat",
+        "blurb": "Safer. Cuts radiation risk. Uses extra power.",
+        "recommended": true,
+        "multipliers": {
+          "powerFromSolar": 1.0,
+          "food": 0.9,
+          "lifeSupport": 1.0,
+          "radiation": 1.15
+        },
+        "instant": { "power": -10, "radiation": -6 }
+      },
+      {
+        "id": "keep_working",
+        "label": "Keep working outside",
+        "blurb": "More science done. Higher risk to the crew.",
+        "recommended": false,
+        "multipliers": {
+          "powerFromSolar": 1.1,
+          "food": 1.0,
+          "lifeSupport": 1.0,
+          "radiation": 2.5
+        },
+        "instant": { "lifeSupport": -15, "radiation": 8 }
+      }
+    ]
+  },
+  {
+    "id": "comms_delay",
+    "name": "Earth Advice Delayed",
+    "description": "Mission Control on Earth sent a plan — but radio takes time. You must choose before their full message arrives.",
+    "durationSols": 2,
+    "multipliers": {
+      "powerFromSolar": 1.0,
+      "food": 1.0,
+      "lifeSupport": 1.0,
+      "radiation": 1.1
+    },
+    "tone": "warn",
+    "factId": "fact_comms",
+    "choices": [
+      {
+        "id": "decide_local",
+        "label": "Decide on-site now",
+        "blurb": "Act with local sensors. Uses crew focus (food + life).",
+        "recommended": true,
+        "multipliers": {
+          "powerFromSolar": 1.0,
+          "food": 0.95,
+          "lifeSupport": 1.0,
+          "radiation": 1.05
+        },
+        "instant": { "food": -4, "lifeSupport": -3 }
+      },
+      {
+        "id": "wait_earth",
+        "label": "Wait for Earth",
+        "blurb": "Safer advice later — but systems drift while you wait.",
+        "recommended": false,
+        "multipliers": {
+          "powerFromSolar": 0.9,
+          "food": 0.9,
+          "lifeSupport": 0.85,
+          "radiation": 1.2
+        },
+        "instant": { "power": -8, "lifeSupport": -6 }
+      }
+    ]
+  },
+  {
+    "id": "glitch",
+    "name": "Equipment Glitch",
+    "description": "A recycler hiccups. Life support takes a hit. How do you fix it?",
+    "durationSols": 2,
+    "multipliers": {
+      "powerFromSolar": 1.0,
+      "food": 1.0,
+      "lifeSupport": 0.55,
+      "radiation": 1.0
+    },
+    "tone": "warn",
+    "factId": "fact_eclss",
+    "choices": [
+      {
+        "id": "repair",
+        "label": "Emergency repair",
+        "blurb": "Spend power to restore life support faster.",
+        "recommended": true,
+        "multipliers": {
+          "powerFromSolar": 1.0,
+          "food": 1.0,
+          "lifeSupport": 0.95,
+          "radiation": 1.0
+        },
+        "instant": { "power": -10, "lifeSupport": 8 }
+      },
+      {
+        "id": "wait_it_out",
+        "label": "Wait it out",
+        "blurb": "Saves power, but air and water stay weak longer.",
+        "recommended": false,
+        "multipliers": {
+          "powerFromSolar": 1.0,
+          "food": 1.0,
+          "lifeSupport": 0.5,
+          "radiation": 1.0
+        },
+        "instant": { "lifeSupport": -10, "food": -3 }
+      }
+    ]
+  },
+  {
+    "id": "bumper_harvest",
+    "name": "Bumper Harvest",
+    "description": "Plants thrive — but processing the harvest needs power and crew time.",
+    "durationSols": 2,
+    "multipliers": {
+      "powerFromSolar": 1.0,
+      "food": 1.6,
+      "lifeSupport": 1.0,
+      "radiation": 1.0
+    },
+    "tone": "good",
+    "factId": "fact_food",
+    "choices": [
+      {
+        "id": "process_now",
+        "label": "Process the harvest",
+        "blurb": "Big food boost. Costs power.",
+        "recommended": true,
+        "multipliers": {
+          "powerFromSolar": 0.95,
+          "food": 1.7,
+          "lifeSupport": 1.0,
+          "radiation": 1.0
+        },
+        "instant": { "food": 12, "power": -8 }
+      },
+      {
+        "id": "store_raw",
+        "label": "Store it raw",
+        "blurb": "Smaller gain, less power used.",
+        "recommended": false,
+        "multipliers": {
+          "powerFromSolar": 1.0,
+          "food": 1.25,
+          "lifeSupport": 1.0,
+          "radiation": 1.0
+        },
+        "instant": { "food": 5, "power": -2 }
+      }
+    ]
+  },
+  {
+    "id": "clear_skies",
+    "name": "Clear Skies",
+    "description": "Bright skies — solar arrays can peak. Where do you send the extra watts?",
+    "durationSols": 2,
+    "multipliers": {
+      "powerFromSolar": 1.4,
+      "food": 1.0,
+      "lifeSupport": 1.0,
+      "radiation": 1.0
+    },
+    "tone": "good",
+    "factId": "fact_solar",
+    "choices": [
+      {
+        "id": "bank_batteries",
+        "label": "Bank into batteries",
+        "blurb": "Store power for night and storms.",
+        "recommended": true,
+        "multipliers": {
+          "powerFromSolar": 1.35,
+          "food": 1.0,
+          "lifeSupport": 1.0,
+          "radiation": 1.0
+        },
+        "instant": { "power": 14 }
+      },
+      {
+        "id": "boost_science",
+        "label": "Boost science gear",
+        "blurb": "More research now; less stored for later.",
+        "recommended": false,
+        "multipliers": {
+          "powerFromSolar": 1.2,
+          "food": 1.0,
+          "lifeSupport": 1.0,
+          "radiation": 1.05
+        },
+        "instant": { "power": 4, "lifeSupport": -4 }
+      }
+    ]
+  },
+  {
+    "id": "crew_fatigue",
+    "name": "Crew Fatigue",
+    "description": "Tired crew uses more supplies. How do you manage them?",
+    "durationSols": 2,
+    "multipliers": {
+      "powerFromSolar": 1.0,
+      "food": 0.75,
+      "lifeSupport": 0.8,
+      "radiation": 1.0
+    },
+    "tone": "warn",
+    "factId": "fact_habitat",
+    "choices": [
+      {
+        "id": "rest_day",
+        "label": "Mandatory rest",
+        "blurb": "Use more food now, recover life support.",
+        "recommended": true,
+        "multipliers": {
+          "powerFromSolar": 1.0,
+          "food": 0.65,
+          "lifeSupport": 1.05,
+          "radiation": 1.0
+        },
+        "instant": { "food": -6, "lifeSupport": 5 }
+      },
+      {
+        "id": "push_through",
+        "label": "Push the schedule",
+        "blurb": "Keep output, but systems and crew strain more.",
+        "recommended": false,
+        "multipliers": {
+          "powerFromSolar": 1.0,
+          "food": 0.7,
+          "lifeSupport": 0.7,
+          "radiation": 1.05
+        },
+        "instant": { "lifeSupport": -8, "food": -4 }
+      }
+    ]
+  }
+]

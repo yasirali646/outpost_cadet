@@ -1,0 +1,95 @@
+[
+  {
+    "id": "tutorial",
+    "title": "Cadet Training",
+    "description": "Learn the basics on Mars. Watch LIFE, SHIELD, POWER, and FOOD — every choice costs something.",
+    "body": "mars",
+    "siteName": "Jezero Crater",
+    "siteNote": "Real Mars landing region explored by Perseverance. Good practice ground for junior controllers.",
+    "siteSource": "NASA Mars Trek / Perseverance",
+    "sols": 8,
+    "massBudget": 30,
+    "powerBudget": 18,
+    "starsOnWin": 1,
+    "isTutorial": true,
+    "forcedEvents": {
+      "3": "solar_flare",
+      "5": "dust_storm"
+    },
+    "coachTip": "Start here! Build a small base, then walk your cadet and face a flare and a dust storm."
+  },
+  {
+    "id": "lunar_dust",
+    "title": "Lunar Dust Watch",
+    "description": "Moon outpost: dust can bury solar panels. Decide fast — Earth radio is almost instant, but power still runs out.",
+    "body": "moon",
+    "siteName": "Lunar South Pole",
+    "siteNote": "Artemis target region — long shadows, precious sunlight, and clingy lunar dust.",
+    "siteSource": "NASA Artemis",
+    "sols": 10,
+    "massBudget": 28,
+    "powerBudget": 18,
+    "starsOnWin": 1,
+    "forcedEvents": {
+      "3": "lunar_dust",
+      "6": "solar_flare"
+    },
+    "coachTip": "On the Moon, dust and sunlight are the big trade-offs. Retract panels or keep charging?"
+  },
+  {
+    "id": "short",
+    "title": "Short Scout",
+    "description": "Quick Mars scout. Survey the site, keep life support up, and respect the ~20 minute radio delay.",
+    "body": "mars",
+    "siteName": "Oxia Planum",
+    "siteNote": "Ancient clay-rich plains — a candidate site studied for Mars exploration.",
+    "siteSource": "NASA Mars Trek",
+    "sols": 10,
+    "massBudget": 28,
+    "powerBudget": 18,
+    "starsOnWin": 1
+  },
+  {
+    "id": "artemis_scout",
+    "title": "Artemis Scout",
+    "description": "Short lunar stay. Balance power, shielding, and food while Earth is only a second away by radio.",
+    "body": "moon",
+    "siteName": "Shackleton Rim",
+    "siteNote": "Near the lunar south pole — sunlight and cold traps in the same neighborhood.",
+    "siteSource": "NASA Artemis",
+    "sols": 12,
+    "massBudget": 30,
+    "powerBudget": 19,
+    "starsOnWin": 2,
+    "forcedEvents": {
+      "4": "comms_delay",
+      "7": "lunar_dust"
+    }
+  },
+  {
+    "id": "standard",
+    "title": "Standard Outpost",
+    "description": "Full Mars outpost. Balance food, power, shielding, and life support while Earth waits 20 minutes away.",
+    "body": "mars",
+    "siteName": "Jezero Crater",
+    "siteNote": "River-delta geology; a real NASA mission site you can explore in Mars Trek.",
+    "siteSource": "NASA Mars Trek",
+    "sols": 20,
+    "massBudget": 32,
+    "powerBudget": 20,
+    "starsOnWin": 2
+  },
+  {
+    "id": "long",
+    "title": "Long Stay",
+    "description": "Extended Mars surface stay. Dust storms, flares, and delayed Earth advice will test your trade-offs.",
+    "body": "mars",
+    "siteName": "Gale Crater",
+    "siteNote": "Curiosity's home — real surface conditions and radiation lessons from MSL RAD.",
+    "siteSource": "NASA Mars / MSL",
+    "sols": 30,
+    "massBudget": 36,
+    "powerBudget": 22,
+    "starsOnWin": 3
+  }
+]
