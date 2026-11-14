@@ -14,7 +14,7 @@ flutter run -d chrome
 ./tool/run_with_nasa.sh build apk --release
 ```
 
-Release APK: `build/app/outputs/flutter-apk/app-release.apk` (also `OutpostCadet-SpaceApps-submission.apk`).
+Release APK: `build/app/outputs/flutter-apk/app-release.apk` (also `OutpostCadet-SpaceApps.apk`).
 
 ## Features
 
